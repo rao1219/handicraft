@@ -1,7 +1,7 @@
 # coursework
 ----
-## Ç°¶Ë
-¿âÓÃµÄbootstrap£¬Ç°¶Ë×´Ì¬ÈçÏÂ£º
+## å‰ç«¯
+åº“ç”¨çš„bootstrapï¼Œå‰ç«¯çŠ¶æ€å¦‚ä¸‹ï¼š
 
 
 ```flow
@@ -26,23 +26,24 @@
 						 	      +---------------+
 
 ```		
-+ ´ËÍ¼Ö»±íÃ÷ÍøÒ³/×´Ì¬Ö®¼äµÄÏà¹Ø¹ØÏµ£¬²¢²»ÄÜÃèÊöËùÓĞµÄÂ·ÓÉºÍÌø×ª¹æÔò¡£
-+ ÊÔÍ¼½«²»Í¬ÍøÒ³¹«ÓÃÄ£°å±íÊ¾ÔÚÒ»Æğ¡£ÀıÈçÓÃ»§ĞÅÏ¢¹ÜÀíÈç¹ûÊÇ¿ÉĞŞ¸Ä×´Ì¬Ôò¿ÉÓÃÓÚĞŞ¸Äµ±Ç°ÓÃ»§×ÊÁÏ£¬·ñÔòÓÃÓÚÏÔÊ¾ËûÈË×ÊÁÏ¡£
++ æ­¤å›¾åªè¡¨æ˜ç½‘é¡µ/çŠ¶æ€ä¹‹é—´çš„ç›¸å…³å…³ç³»ï¼Œå¹¶ä¸èƒ½æè¿°æ‰€æœ‰çš„è·¯ç”±å’Œè·³è½¬è§„åˆ™ã€‚
++ è¯•å›¾å°†ä¸åŒç½‘é¡µå…¬ç”¨æ¨¡æ¿è¡¨ç¤ºåœ¨ä¸€èµ·ã€‚ä¾‹å¦‚ç”¨æˆ·ä¿¡æ¯ç®¡ç†å¦‚æœæ˜¯å¯ä¿®æ”¹çŠ¶æ€åˆ™å¯ç”¨äºä¿®æ”¹å½“å‰ç”¨æˆ·èµ„æ–™ï¼Œå¦åˆ™ç”¨äºæ˜¾ç¤ºä»–äººèµ„æ–™ã€‚
 
-## ºó¶Ë
-Ê¹ÓÃphpµÄlavavrel¿ò¼ÜÍê³É£¬ÎªRESTful·şÎñÆ÷
-Ìá¹©
-	+ ÓÃ»§¹ÜÀí
-	+ ¶©µ¥¹ÜÀí
-	+ ĞèÇó¹ÜÀí
-	+ Session management
+## åç«¯
+ä½¿ç”¨phpçš„lavavrelæ¡†æ¶å®Œæˆï¼Œä¸ºRESTfulæœåŠ¡å™¨
+æä¾›  
+	+ ç”¨æˆ·ç®¡ç†  
+	+ è®¢å•ç®¡ç†  
+	+ éœ€æ±‚ç®¡ç†  
+	+ Session management   
 
-SQL£º
+
+SQLï¼š
 ```sql
 
 create database crafts;
 
-/* »áÔ±±í */
+/* ä¼šå‘˜è¡¨ */
 CREATE TABLE IF NOT EXISTS `member` 
 (
 	id int primary key auto_increment,
@@ -51,40 +52,40 @@ CREATE TABLE IF NOT EXISTS `member`
 	password varchar(100) not NULL,
 	headpic varchar(100) default '/images/head/0.jpg',
 	name varchar(20),
-	gender tinyint not null default 0 comment '0:ÄĞ 1:Å®',
+	gender tinyint not null default 0 comment '0:ç”· 1:å¥³',
 	saverage int not null default 0,
 	sbad int not null default 0,
 	name varchar(20),
 	phone varchar(20),
-	qq varchar(15)£¬
-	intro varchar(1024) comment 'ÆäËû½éÉÜ'
+	qq varchar(15)ï¼Œ
+	intro varchar(1024) comment 'å…¶ä»–ä»‹ç»'
 )DEFAULT CHARSET=utf8;
 
 
-/* ÓÃ»§ĞèÇó±í */
+/* ç”¨æˆ·éœ€æ±‚è¡¨ */
 CREATE TABLE IF NOT EXISTS `requireTable` 
 (
 	id int primary key auto_increment,
-	uid int not null comment 'ËùÊôÓÃ»§',
-	name varchar(100) comment '²úÆ·±íÃû',
-	info text comment 'ĞÅÏ¢ÏîÄ¿'
+	uid int not null comment 'æ‰€å±ç”¨æˆ·',
+	name varchar(100) comment 'äº§å“è¡¨å',
+	info text comment 'ä¿¡æ¯é¡¹ç›®'
 )DEFAULT CHARSET=utf8;
 
 
-/* ²úÆ·ĞÅÏ¢±í */
+/* äº§å“ä¿¡æ¯è¡¨ */
 CREATE TABLE IF NOT EXISTS `product` 
 (
 	id int primary key auto_increment,
-	mid int not null comment 'ËùÊô²úÆ·±í',
-	title varchar(100) comment '²úÆ·Ãû³Æ¿É¼ìË÷',
-	info text comment '²úÆ·ĞòÁĞ»¯ĞÅÏ¢'
+	mid int not null comment 'æ‰€å±äº§å“è¡¨',
+	title varchar(100) comment 'äº§å“åç§°å¯æ£€ç´¢',
+	info text comment 'äº§å“åºåˆ—åŒ–ä¿¡æ¯'
 )DEFAULT CHARSET=utf8;
 
 ```
 
-## ¿ª·¢¹¤¾ß
+## å¼€å‘å·¥å…·
 
-+ °ü¹ÜÀí£ºbower£¬·½±ã¸ßµÂµØÍ¼/discuzµÈµÚÈı·½¿âºÍAPIµÄ´ò°ü£¬Ğ´³É½Å±¾·½±ã°²×°
-+ ¹¹Ôì¹¤¾ß£ºGrunt£¬·½±ã·şÎñÆ÷²¿Êğ£¬Í³Ò»±àÒë£¬×÷Îª¾²Ì¬ÎÄ¼ş·¢²¼
-+ °æ±¾¿ØÖÆ£º Git£¬±ãÓÚ°æ±¾»ØÍËºÍ¶àÈËºÏ×÷
++ åŒ…ç®¡ç†ï¼šbowerï¼Œæ–¹ä¾¿é«˜å¾·åœ°å›¾/discuzç­‰ç¬¬ä¸‰æ–¹åº“å’ŒAPIçš„æ‰“åŒ…ï¼Œå†™æˆè„šæœ¬æ–¹ä¾¿å®‰è£…
++ æ„é€ å·¥å…·ï¼šGruntï¼Œæ–¹ä¾¿æœåŠ¡å™¨éƒ¨ç½²ï¼Œç»Ÿä¸€ç¼–è¯‘ï¼Œä½œä¸ºé™æ€æ–‡ä»¶å‘å¸ƒ
++ ç‰ˆæœ¬æ§åˆ¶ï¼š Gitï¼Œä¾¿äºç‰ˆæœ¬å›é€€å’Œå¤šäººåˆä½œ
 
