@@ -1,0 +1,27 @@
+dry-run: false
+hookfiles: "test/dreddhooks.coffee"
+language: nodejs
+sandbox: false
+server: ./bin/www
+server-wait: 5
+init: false
+custom: {}
+names: false
+only: []
+reporter:
+  - markdown
+output:
+  - dredd-report.md
+header: []
+sorted: false
+user: null
+inline-errors: false
+details: false
+method: []
+color: true
+level: info
+timestamp: false
+silent: false
+path: []
+blueprint: doc/api.md
+endpoint: 'http://localhost:2333/api'

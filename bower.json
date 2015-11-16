@@ -1,0 +1,17 @@
+{
+  "name": "vsvs",
+  "private": true,
+  "dependencies": {
+    "angular": "",
+    "angular-ui-router": "",
+    "jquery": "",
+    "fontawesome": "",
+    "bootstrap": "",
+    "ngprogress-lite": "",
+    "angular-gettext": "",
+    "ng-file-upload": "",
+    "angular-toastr": "",
+    "angular-bootstrap": "",
+    "angular-resource": ""
+  }
+}

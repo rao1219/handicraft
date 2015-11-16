@@ -1,0 +1,24 @@
+{ "aaData": [
+	{
+		"engine": "Trident",
+		"browser": "Internet Explorer 4.0",
+		"platform": "Win 95+",
+		"version": "4","grade": "X","id": "2"
+	},
+	{
+		"engine": "Trident",
+		"browser": "Internet Explorer 5.0",
+		"platform": "Win 95+",
+		"version": "5",
+		"grade": "C",
+		"id": "<button class='btn btn-info'>表名:如果他</button>"
+	},
+	{
+		"engine": "Trident",
+		"browser": "Internet Explorer 5.0",
+		"platform": "Win 95+",
+		"version": "5",
+		"grade": "C",
+		"id": "<button class='btn btn-info'>表名:如果他</button>"
+	}
+] }
