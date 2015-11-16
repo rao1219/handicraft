@@ -31,11 +31,12 @@
 
 ## 后端
 使用php的lavavrel框架完成，为RESTful服务器
-提供  
-	+ 用户管理  
-	+ 订单管理  
-	+ 需求管理  
-	+ Session management   
+提供
+
++ 用户管理  
++ 订单管理  
++ 需求管理  
++ Session management   
 
 
 SQL：
